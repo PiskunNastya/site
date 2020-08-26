@@ -1,0 +1,175 @@
+.postedPost {
+    margin-top: 159px;
+    border: 1px solid #c7ff66;
+    padding: 80px;
+}
+
+.postedPost__info {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 90px;
+}
+
+.postedPost h3, h4 {
+    font-family: 'Appetite-Italic';
+}
+
+.postedPost__avatar {
+    width: 40px;
+    height: 40px;
+}
+
+.postedPost__picture {
+    width: 100%;
+    margin: 60px 0;
+}
+
+.postedPost__note {
+    font-size: 2rem;
+    color: #c7ff66;
+}
+
+.postedPost__noteBlock {
+    display: flex;
+    height: 80px;
+    border-left: 1px solid;
+    padding: 15px;
+}
+
+.postedPost__text {
+    margin: 15px 0;
+}
+
+.postedPost__social {
+    height: 50px;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    display: flex;
+    align-items: center;
+    padding-left: 15px; 
+    margin: 40px 0;
+}
+
+.postedPost__forUser {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 25px;
+}
+
+.postedPost__note {
+    font-family: 'Appetite-Italic';
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.postedPost__buttonLike {
+    border: none;
+    background: none;
+    outline: none !important;
+}
+
+
+
+.comment {
+    margin-top: 50px;
+    border: 1px solid #c7ff66;
+    padding: 40px;
+}
+
+.comment_post {
+    margin-top: 20px;
+    border: 1px solid #c7ff66;
+    padding: 20px;
+}
+
+.postedPost__button-comment {
+    border: none;
+    background: none;
+    color: #007bff;
+    outline: none !important;
+}
+
+.comment__modalWindow {
+    /* width: 100%; */
+    /* height: 350px; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.comment__button {
+    background: #495057;
+    border: none;
+    outline: none !important;
+    width: 20%;
+    margin-top: 10px;
+    transition: width 500ms;
+}
+
+.comment__button:hover {
+    width: 50%;
+    transition: width 500ms;
+}
+
+.commentPage {
+    height: 9rem;
+}
+
+
+
+
+
+
+
+.resentPosts {
+    display: flex;
+    flex-direction: column;
+}
+
+.resentPosts__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 86px;
+}
+
+
+
+.resentPosts__postAll {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.resentPosts__post {
+    width: 30%;
+    border: 1px solid #c7ff66;
+    margin: 0 15px;
+    text-align: center;
+    min-width: 205px;
+}
+
+.resentPosts__post h4 {
+    padding-top: 15px;
+}
+
+.resentPosts__link {
+    color: antiquewhite;
+}
+
+.resentPosts__link:hover {
+    color: #007bff;
+}
+
+.resentPosts__picture {
+    width: 100%;
+}
+
+.resentPosts__info p {
+    font-family: 'Appetite-Italic';
+    font-size: 1.5rem;
+    color: antiquewhite;
+}

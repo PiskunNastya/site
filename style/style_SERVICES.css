@@ -1,0 +1,82 @@
+/* настраиваем картинку под меню */
+.autumnBackground img {
+    width: 100%;
+    margin-top: 130px;
+}
+
+
+.blog__article {
+    margin: 50px 0;
+    border: 1px solid #c7ff66;
+}
+
+/* картинка на ширину div */
+.blog__picture {
+    width: 100%;
+}
+
+.blog__avatar {
+    width: 40px;
+}
+
+/* настраиваем поле под картинкой */
+.blog__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px 5px;
+}
+
+/* настраиваем поле под картинкой */
+.blog__admin p {
+    margin: 0;
+    padding-left: 17px;
+}
+
+/* настраиваем поле под картинкой */
+.blog__info-text {
+    display: flex;
+    align-items: center;
+}
+
+.blog__text {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.blog__forUser {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog__forUser a:hover {
+    text-decoration: none;
+}
+
+.blog__admin_userName {
+    color: antiquewhite;
+}
+
+.blog__admin_userName:hover {
+    color: #007bff;
+}
+
+.blog__buttonLike {
+    border: none;
+    background: none;
+    outline: none !important;
+}
+
+
+
+.blog__link {
+    font-family: 'Appetite-Italic';
+    color: #c7ff66;
+}
+
+.blog__link:hover {
+    text-decoration: none;
+    color: #c7ff66;
+}

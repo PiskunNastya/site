@@ -1,0 +1,144 @@
+/* __________________ СТАРТ стили меню больше 1202рх __________________ */
+
+/* блок header */
+.header {
+    margin: 2rem 0;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    z-index: 99;
+    transition: background linear 500ms;
+    border-radius: 20px;
+}
+
+/* при скроле вниз, блок меню меняет цвет - JS */
+.header__menu_scroll {
+    background-color: #212529b8;
+    z-index: 99;
+    transition: background linear 500ms;
+    border-radius: 20px;
+}
+
+/* стиль меню */
+.header__elemMenu-link {
+    font-family: 'Appetite-Italic';
+    color:antiquewhite;
+    font-size: 1.2rem;
+    padding: 11px 11px;
+    background-color: #2020207c;
+    border: 1px dotted rgba(255, 255, 255, 0.37);
+}
+
+/* стиль меню при наведении мышки */
+.header__elemMenu-link:hover {
+    background: #c7ff66;
+    transition: background linear 500ms;
+    color: #2c2c2c;
+    text-decoration: none;
+}
+
+/* отключили метки списока с меню */
+.header__elemMenu {
+    list-style: none;
+}
+
+/* настраиваем лого */
+.header__logo-link:hover {
+    text-decoration: none;
+}
+
+/* настраиваем лого */
+.header__logo-link p {
+	margin: 0;
+	font-size: 0.7rem;
+}
+
+/* настраиваем лого */
+.header__logo-h1 {
+    width: 200px;
+    font-size: 30px;
+}
+
+/* подключение JS. toggle при нажатии кнопки бургер-меню */
+.header__menu-none {
+    display: none;
+}
+
+/* помогает отображать меню по середине блока header */
+.header__menu_nav, .header__logo {
+    margin-top: 12px;
+}
+
+.header__menu-flex {
+    display: flex;          /* переключатель JS */
+    margin-top: 13px;       /* помогает отображать меню по середине блока header */
+}
+
+
+
+/* __________________ ФИНИШ стили меню больше 1202рх __________________ */
+
+
+
+/* __________________ СТАРТ стили меню меньше 1201рх __________________ */
+
+/* вид кнопки-бургер */
+.header__button {
+    font-family: 'Appetite-Italic';
+    width: 70px;
+    height: 40px;
+    color: black;
+    background: #c7ff66;
+    border-radius: 15px;
+    border: 2px solid white;
+    margin-left: auto;              /* при раскрытии бургер меню, кнопка не пригает в лево */
+}
+
+/* при нажатии на кнопку нет выделеной области */
+.header__button:focus {
+    outline: none;
+}
+
+/* подключение JS. toggle при нажатии кнопки бургер-меню. стиль вида самого меню при открытии */
+.header__displayMenu {
+    width: 12rem;
+    background: bisque;
+    height: 23rem;
+    background-color: #202020c7;
+    border-radius: 15px;
+    border: 2px solid white;
+}
+
+/* подключение JS. toggle при нажатии кнопки бургер-меню. стиль вида самого меню при открытии */
+.header__allManu-display {
+    padding: 0;
+    height: 20rem;
+    width: 100%;
+}
+
+/* подключение JS. toggle при нажатии кнопки бургер-меню. стиль вида самого меню при открытии */
+.header__elemMenu-display {
+    list-style: none;
+    height: 20%;
+    width: 100%;
+}
+
+/* подключение JS. toggle при нажатии кнопки бургер-меню. стиль вида самого меню при открытии */
+.header__elemMenu-link-display {
+    font-family: 'Appetite-Italic';
+    color: antiquewhite;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* __________________ ФИНИШ стили меню меньше 1201рх __________________ */
+
+
+
+
+
+
+

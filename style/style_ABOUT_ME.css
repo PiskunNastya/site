@@ -1,0 +1,25 @@
+main {
+    margin-top: 130px;
+    display: flex;
+    flex-direction: column;
+}
+
+p, li {
+    font-family: 'Appetite-Italic';
+    color: antiquewhite;
+}
+
+p {
+    font-family: 'Appetite-Italic';
+    font-size: 2rem;
+}
+
+li {
+    font-family: 'Appetite-Italic';
+    font-size: 1.5rem;
+}
+
+img {
+    width: 68%;
+    margin: 0 auto;
+}

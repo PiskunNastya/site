@@ -13,111 +13,118 @@
     <title>Site</title>
 </head>
 
-<body class="container"> 
+<body class="container">
     <header class="header container">
-        <div class="header__logo">
+        <div class="header__logo col-4">
             <a href="#" class="header__logo-link">
                 <p>YANE NAUMOSKI</p>
-                <h1 class="header__logo-h1">DESING FOLIO</h1>
+                <h1>DESING FOLIO</h1>
             </a>
         </div>
 
-        <nav class="header__menu_nav">
-            <button class="header__button">Menu</button>
-            <ul class="header__menu_ul header__menu-none">
-                <li class="header__menu_li">
-                    <a href="index.html" class="header__menu_a">HOME</a>
+        <nav class="header__menu_nav header__menu-block">
+        <!-- <nav class="header__displayMenu"> -->
+
+
+            <ul class="header__menu_ul header__allMenu">
+
+            <button class="header__button" style="display: none;">Menu</button>
+            <!-- <ul class="header__allManu-display"> -->
+            
+                
+                <li class="header__menu_li header__elemMenu">
+                    <a href="#" class="header__menu_a header__elemMenu-link">HOME</a>
                 </li>
-                <li class="header__menu_li">
-                    <a href="SERVICES.html" class="header__menu_a">SERVICES</a>
+                <li class="header__menu_li header__elemMenu">
+                    <a href="#ourWork" class="header__menu_a header__elemMenu-link">WORK</a>
                 </li>
-                <li class="header__menu_li">
-                    <a href="PRACTICE_JS.html" class="header__menu_a">REGISTRATION</a>
+                <li class="header__menu_li header__elemMenu">
+                    <a href="#services" class="header__menu_a header__elemMenu-link">PRACTICE JS</a>
                 </li>
-                <li class="header__menu_li">
-                    <a href="ABOUT_ME.html" class="header__menu_a">ABOUT ME</a>
+                <li class="header__menu_li header__elemMenu">
+                    <a href="#aboutUs" class="header__menu_a header__elemMenu-link">ABOUT ME</a>
                 </li>
-                <li class="header__menu_li">
-                    <a href="#contactUs" class="header__menu_a">CONTACT</a>
+                <li class="header__menu_li header__elemMenu">
+                    <a href="#contactUs" class="header__menu_a header__elemMenu-link">CONTACT</a>
                 </li>
+
+
+                <!-- <li class="header__elemMenu-display"><a href="#" class="header__elemMenu-link-display">HOME</a></li>
+                <li class="header__elemMenu-display"><a href="#ourWork" class="header__elemMenu-link-display">WORK</a></li>
+                <li class="header__elemMenu-display"><a href="#services" class="header__elemMenu-link-display">PRACTICE JS</a></li>
+                <li class="header__elemMenu-display"><a href="#aboutUs" class="header__elemMenu-link-display">ABOUT ME</a></li>
+                <li class="header__elemMenu-display"><a href="#contactUs" class="header__elemMenu-link-display">CONTACT</a></li> -->
+
             </ul>
         </nav>
     </header>
 
     <main>
         <section class="slider">
-            <img src="img/slide1.jpg" alt="picture" class="slider__picture">
             <img src="img/slide2.jpg" alt="picture" class="slider__picture">
-            <img src="img/slide3.jpg" alt="picture" class="slider__picture">
         </section>
 
         <section class="ourWork" id="ourWork">
-            <!-- модальное окно, которое открываеться при нажатии на картинку -->
-            <div class="ourWork__modalWindow ourWork__modalWindow_none">
-                <img alt="modalWindow">
-                <button class="ourWork__buttomOut">&#215;</button>
-            </div>
-
             <article class="ourWork__head">
                 <h2 class="ourWork__h2">Our work</h2>
                 <div class="ourWork__allLinks">
-                    <p class="ourWork__link"><a href="#" class="ourWork__elemMenu-link" id="ALL">ALL</a>|</p>
-                    <p class="ourWork__link"><a href="#" class="ourWork__elemMenu-link" id="WEB">WEB</a>|</p>
-                    <p class="ourWork__link"><a href="#" class="ourWork__elemMenu-link" id="GRAP">GRAP</a>|</p>
-                    <p class="ourWork__link"><a href="#" class="ourWork__elemMenu-link" id="BRAND">BRAND</a></p>
+                    <p class="ourWork__link"><a href="#" class="ourWork__elemMenu-link">ALL</a>|</p>
+                    <p class="ourWork__link"><a href="#" class="ourWork__elemMenu-link">WEB</a>|</p>
+                    <p class="ourWork__link"><a href="#" class="ourWork__elemMenu-link">GRAPHYC</a>|</p>
+                    <p class="ourWork__link"><a href="#" class="ourWork__elemMenu-link">BRAND</a></p>
                 </div>
             </article>
 
             <article class="ourWork__allArticles">
-                <figure class="ourWork__picture-Text picture_WEB">
-                    <img src="img/ourWork2.jpg" alt="WEB" class="ourWork__picture">
+                <figure class="ourWork__picture-Text">
+                    <img src="img/ourWork2.jpg" alt="picture" class="ourWork__picture">
                     <figcaption class="ourWork__text"> WEB </figcaption>
                 </figure>
-                <figure class="ourWork__picture-Text  picture_WEB">
-                    <img src="img/ourWork2.jpg" alt="WEB" class="ourWork__picture">
+                <figure class="ourWork__picture-Text">
+                    <img src="img/ourWork2.jpg" alt="picture" class="ourWork__picture">
                     <figcaption class="ourWork__text"> WEB </figcaption>
                 </figure>
-                <figure class="ourWork__picture-Text picture_GRAP">
-                    <img src="img/ourWork3.jpg" alt="GRAP" class="ourWork__picture">
-                    <figcaption class="ourWork__text"> GRAP </figcaption>
+                <figure class="ourWork__picture-Text">
+                    <img src="img/ourWork3.jpg" alt="picture" class="ourWork__picture">
+                    <figcaption class="ourWork__text"> GRAPHYC </figcaption>
                 </figure>
-                <figure class="ourWork__picture-Text picture_BRAND">
-                    <img src="img/ourWork4.png" alt="BRAND" class="ourWork__picture">
+                <figure class="ourWork__picture-Text">
+                    <img src="img/ourWork4.png" alt="picture" class="ourWork__picture">
                     <figcaption class="ourWork__text"> BRAND </figcaption>
                 </figure>
 
-                <figure class="ourWork__picture-Text picture_BRAND">
-                    <img src="img/ourWork4.png" alt="BRAND" class="ourWork__picture">
+                <figure class="ourWork__picture-Text">
+                    <img src="img/ourWork4.png" alt="picture" class="ourWork__picture">
                     <figcaption class="ourWork__text"> BRAND </figcaption>
                 </figure>
-                <figure class="ourWork__picture-Text  picture_WEB">
-                    <img src="img/ourWork2.jpg" alt="WEB" class="ourWork__picture">
+                <figure class="ourWork__picture-Text">
+                    <img src="img/ourWork2.jpg" alt="picture" class="ourWork__picture">
                     <figcaption class="ourWork__text"> WEB </figcaption>
                 </figure>
-                <figure class="ourWork__picture-Text picture_GRAP">
-                    <img src="img/ourWork3.jpg" alt="GRAP" class="ourWork__picture">
-                    <figcaption class="ourWork__text"> GRAP </figcaption>
+                <figure class="ourWork__picture-Text">
+                    <img src="img/ourWork3.jpg" alt="picture" class="ourWork__picture">
+                    <figcaption class="ourWork__text"> GRAPHYC </figcaption>
                 </figure>
-                <figure class="ourWork__picture-Text picture_BRAND">
-                    <img src="img/ourWork4.png" alt="BRAND" class="ourWork__picture">
+                <figure class="ourWork__picture-Text">
+                    <img src="img/ourWork4.png" alt="picture" class="ourWork__picture">
                     <figcaption class="ourWork__text"> BRAND </figcaption>
                 </figure>
 
-                <figure class="ourWork__picture-Text picture_BRAND">
-                    <img src="img/ourWork4.png" alt="BRAND" class="ourWork__picture">
+                <figure class="ourWork__picture-Text">
+                    <img src="img/ourWork4.png" alt="picture" class="ourWork__picture">
                     <figcaption class="ourWork__text"> BRAND </figcaption>
                 </figure>
-                <figure class="ourWork__picture-Text picture_GRAP">
-                    <img src="img/ourWork3.jpg" alt="GRAP" class="ourWork__picture">
-                    <figcaption class="ourWork__text"> GRAP </figcaption>
+                <figure class="ourWork__picture-Text">
+                    <img src="img/ourWork3.jpg" alt="picture" class="ourWork__picture">
+                    <figcaption class="ourWork__text"> GRAPHYC </figcaption>
                 </figure>
-                <figure class="ourWork__picture-Text picture_BRAND">
-                    <img src="img/ourWork4.png" alt="BRAND" class="ourWork__picture">
+                <figure class="ourWork__picture-Text">
+                    <img src="img/ourWork4.png" alt="picture" class="ourWork__picture">
                     <figcaption class="ourWork__text"> BRAND </figcaption>
                 </figure>
-                <figure class="ourWork__picture-Text picture_GRAP">
-                    <img src="img/ourWork3.jpg" alt="GRAP" class="ourWork__picture">
-                    <figcaption class="ourWork__text"> GRAP </figcaption>
+                <figure class="ourWork__picture-Text">
+                    <img src="img/ourWork3.jpg" alt="picture" class="ourWork__picture">
+                    <figcaption class="ourWork__text"> GRAPHYC </figcaption>
                 </figure>
             </article>
 
@@ -143,47 +150,47 @@
             <article class="services__allArticles">
                 <div class="services__article">
                     <h3 class="services__h3">WEB DESIGN/DEVELOPMENT</h3>
-                    <img src="img/services/cat1.jpg" alt="picture" class="services__picture">
+                    <img src="img/ourWork2.jpg" alt="picture" class="services__picture">
                     <p class="services__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
                         voluptates, labore ipsum
                         exercitationem eius libero quis, ipsam, cupiditate aspernatur corporis mollitia tenetur dolorum
                         cumque minus recusandae corrupti aliquid voluptate quae. Aliquam commodi aspernatur porro
                         assumenda,
                         provident perspiciatis alias hic similique.а</p>
-                    <a href="SERVICES_pages/SERVICES_page_1.html" class="services__link"><span class="services__link-span">Read more</span> &#x25b6;</a>
+                    <a href="#" class="services__link">Read more &#x25b6;</a>
                 </div>
                 <div class="services__article">
                     <h3 class="services__h3">UI/UX DESIGN</h3>
-                    <img src="img/services/cat2.jpg" alt="picture" class="services__picture">
+                    <img src="img/ourWork2.jpg" alt="picture" class="services__picture">
                     <p class="services__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
                         voluptates, labore ipsum
                         exercitationem eius libero quis, ipsam, cupiditate aspernatur corporis mollitia tenetur dolorum
                         cumque minus recusandae corrupti aliquid voluptate quae. Aliquam commodi aspernatur porro
                         assumenda,
                         provident perspiciatis alias hic similique.а</p>
-                    <a href="SERVICES_pages/SERVICES_page_2.html" class="services__link"><span class="services__link-span">Read more</span> &#x25b6;</a>
+                    <a href="#" class="services__link">Read more &#x25b6;</a>
                 </div>
                 <div class="services__article">
                     <h3 class="services__h3">GREAPHIC DESIGN</h3>
-                    <img src="img/services/cat3.jpg" alt="picture" class="services__picture">
+                    <img src="img/ourWork2.jpg" alt="picture" class="services__picture">
                     <p class="services__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
                         voluptates, labore ipsum
                         exercitationem eius libero quis, ipsam, cupiditate aspernatur corporis mollitia tenetur dolorum
                         cumque minus recusandae corrupti aliquid voluptate quae. Aliquam commodi aspernatur porro
                         assumenda,
                         provident perspiciatis alias hic similique.а</p>
-                    <a href="SERVICES_pages/SERVICES_page_3.html" class="services__link"><span class="services__link-span">Read more</span> &#x25b6;</a>
+                    <a href="#" class="services__link"><span>Read more</span>&#x25b6;</a>
                 </div>
                 <div class="services__article">
                     <h3 class="services__h3">BRAND DESIGN</h3>
-                    <img src="img/services/cat4.jpg" alt="picture" class="services__picture">
+                    <img src="img/ourWork2.jpg" alt="picture" class="services__picture">
                     <p class="services__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
                         voluptates, labore ipsum
                         exercitationem eius libero quis, ipsam, cupiditate aspernatur corporis mollitia tenetur dolorum
                         cumque minus recusandae corrupti aliquid voluptate quae. Aliquam commodi aspernatur porro
                         assumenda,
                         provident perspiciatis alias hic similique.а</p>
-                    <a href="SERVICES_pages/SERVICES_page_4.html" class="services__link"><span class="services__link-span">Read more</span> &#x25b6;</a>
+                    <a href="#" class="services__link">Read more &#x25b6;</a>
                 </div>
             </article>
         </section>
@@ -204,7 +211,7 @@
             <article class="aboutUs__allArticles">
                 <div class="aboutUs__article">
                     <h3 class="aboutUs__h3">TONY STARK - CEO</h3>
-                    <img src="img/aboutUs/1385970734_1938090761.jpg" alt="picture" class="aboutUs__picture">
+                    <img src="img/ourWork2.jpg" alt="picture" class="aboutUs__picture">
                     <p class="aboutUs__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
                         voluptates, labore ipsum
                         exercitationem eius libero quis, ipsam, cupiditate aspernatur corporis mollitia tenetur dolorum
@@ -214,7 +221,7 @@
                     <div class="aboutUs__links">
                         <div>
                             <img src="" alt="" class="aboutUs__icon-link">
-                            <a href="https://twitter.com/?lang=ru" target="blank" class="aboutUs__icon">&#9872; Twitter</a>
+                            <a href="#" class="aboutUs__icon">&#9872; Twitter</a>
                         </div>
                         <div>
                             <img src="" alt="" class="aboutUs__icon-link">
@@ -222,13 +229,13 @@
                         </div>
                         <div>
                             <img src="" alt="" class="aboutUs__icon-link">
-                            <a href="https://github.com/PiskunNastya" target="blank" class="aboutUs__icon">&#9885; Website</a>
+                            <a href="#" class="aboutUs__icon">&#9885; Website</a>
                         </div>
                     </div>
                 </div>
                 <div class="aboutUs__article">
                     <h3 class="aboutUs__h3">RHONA MITRA - SENIOR DEVELOPER</h3>
-                    <img src="img/aboutUs/16431.jpg" alt="picture" class="aboutUs__picture">
+                    <img src="img/ourWork2.jpg" alt="picture" class="aboutUs__picture">
                     <p class="aboutUs__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
                         voluptates, labore ipsum
                         exercitationem eius libero quis, ipsam, cupiditate aspernatur corporis mollitia tenetur dolorum
@@ -238,7 +245,7 @@
                     <div class="aboutUs__links">
                         <div>
                             <img src="" alt="" class="aboutUs__icon-link">
-                            <a href="https://twitter.com/?lang=ru" target="blank" class="aboutUs__icon">&#9872; Twitter</a>
+                            <a href="#" class="aboutUs__icon">&#9872; Twitter</a>
                         </div>
                         <div>
                             <img src="" alt="" class="aboutUs__icon-link">
@@ -246,13 +253,13 @@
                         </div>
                         <div>
                             <img src="" alt="" class="aboutUs__icon-link">
-                            <a href="https://github.com/PiskunNastya" target="blank" class="aboutUs__icon">&#9885; Website</a>
+                            <a href="#" class="aboutUs__icon">&#9885; Website</a>
                         </div>
                     </div>
                 </div>
                 <div class="aboutUs__article">
                     <h3 class="aboutUs__h3">LEONARDO DICAPRIO - UI DESIGNER</h3>
-                    <img src="img/aboutUs/f75e5439-793f-41de-8f1e-dc7e0330c255.jpg" alt="picture" class="aboutUs__picture">
+                    <img src="img/ourWork2.jpg" alt="picture" class="aboutUs__picture">
                     <p class="aboutUs__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
                         voluptates, labore ipsum
                         exercitationem eius libero quis, ipsam, cupiditate aspernatur corporis mollitia tenetur dolorum
@@ -262,7 +269,7 @@
                     <div class="aboutUs__links">
                         <div>
                             <img src="" alt="" class="aboutUs__icon-link">
-                            <a href="https://twitter.com/?lang=ru" target="blank" class="aboutUs__icon">&#9872; Twitter</a>
+                            <a href="#" class="aboutUs__icon">&#9872; Twitter</a>
                         </div>
                         <div>
                             <img src="" alt="" class="aboutUs__icon-link">
@@ -270,13 +277,13 @@
                         </div>
                         <div>
                             <img src="" alt="" class="aboutUs__icon-link">
-                            <a href="https://github.com/PiskunNastya" target="blank" class="aboutUs__icon">&#9885; Website</a>
+                            <a href="#" class="aboutUs__icon">&#9885; Website</a>
                         </div>
                     </div>
                 </div>
                 <div class="aboutUs__article">
                     <h3 class="aboutUs__h3">CAROLINA A. - GRAPHIC DESIGNER</h3>
-                    <img src="img/aboutUs/vecher-firewatch-campo-santo-kholmy-vid-les-igra-peizazh-g-2.jpg" alt="picture" class="aboutUs__picture">
+                    <img src="img/ourWork2.jpg" alt="picture" class="aboutUs__picture">
                     <p class="aboutUs__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
                         voluptates, labore ipsum
                         exercitationem eius libero quis, ipsam, cupiditate aspernatur corporis mollitia tenetur dolorum
@@ -286,15 +293,15 @@
                     <div class="aboutUs__links">
                         <div>
                             <img src="" alt="" class="aboutUs__icon-link">
-                            <a href="https://twitter.com/?lang=ru" target="blank" class="aboutUs__icon">&#9872; Twitter</a>
+                            <a href="#" class="aboutUs__icon">Twitter</a>
                         </div>
                         <div>
                             <img src="" alt="" class="aboutUs__icon-link">
-                            <a href="#" class="aboutUs__icon">&#128386; E-mail</a>
+                            <a href="#" class="aboutUs__icon">E-mail</a>
                         </div>
                         <div>
                             <img src="" alt="" class="aboutUs__icon-link">
-                            <a href="https://github.com/PiskunNastya" target="blank" class="aboutUs__icon">&#9885; Website</a>
+                            <a href="#" class="aboutUs__icon">&#9885; Website</a>
                         </div>
                     </div>
                 </div>
@@ -311,21 +318,24 @@
                     expedita, <a href="#" class="contactUs__head-link">mail@domain.com</a></p>
             </article>
 
-            <article class="contactUs__allArticles row">
-                <div class="contactUs__block-form col-lg">
+            <article class="contactUs__allArticles">
+                <div class="contactUs__block-form">
                     <p class="contactUs__form-text">Lorem ipsum dolor sit amet.</p>
                     <form class="contactUs__form">
-                        <div class="contactUs__form_name-email row">
-                            <label class="col-lg">
+                        <div class="contactUs__form_name-email">
+                            <label>
                                 Your name
                                 <input type="text" name="name">
                             </label>
-                            <label class="col-lg">
+                            <label>
                                 Your email
                                 <input type="email" name="email">
                             </label>
                         </div>
- 
+                        <!-- <label>
+                            Message
+                            <input type="text" name="message">
+                        </label> -->
                         <div>
                             <p>Message</p>
                             <textarea name="comment" cols="30" rows="10"></textarea>
@@ -335,17 +345,13 @@
                     </form>
                 </div>
 
-                <div class="contactUs__info col-lg">
+                <div class="contactUs__info">
                     <p class="contactUs__info-text">Design Portfolio | 254 Lipsum street | Dolor Sit, 12345 |
                         Consectetur</p>
                     <img src="img/ourWork2.jpg" alt="" class="contactUs__info-picture">
                 </div>
             </article>
         </section>
-
-        <div class="scrollToTop">
-            <img src="img/scrollToTop.png" alt="scrollToTop">
-        </div>
 
     </main>
 
@@ -392,14 +398,7 @@
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
     </script>
 
-    <script src="js/script__header.js"></script>
-    <script src="js/script__slide.js"></script>
-    <script src="js/script_owrWork_buttonLink.js"></script>
-    <script src="js/script_scrollToTop.js"></script>
-    <script src="js/script__index_owrWork-picture.js"></script>
-    <script src="js/script__index.js"></script>
-
-
+    <script src="js/script.js"></script>
 </body>
 
 </html>

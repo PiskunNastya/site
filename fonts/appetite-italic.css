@@ -8,35 +8,17 @@
 		url('Appetite-Italic/appetite-italic.svg#appetite-italic') format('svg'); /* Chrome < 4, Legacy iOS */
 }
 
-h1, h2, .header__elemMenu-link {
+h1, h2 {
 	font-family: 'Appetite-Italic';
 }
 
-.header__elemMenu-link {
-	font-size: 1.2rem;
-}
+
 
 h1, h2, h3 {
 	color: #c7ff66;
 }
 
-.header__elemMenu-link {
-	color: white;
-}
 
-.header__elemMenu-link:hover {
-    text-decoration: none;
-    color: #c7ff66;
-}
-
-.header__logo-link:hover {
-    text-decoration: none;
-}
-
-.header__logo-link p {
-	margin: 0;
-	font-size: 0.7rem;
-}
 
 
 .ourWork__elemMenu-link {

@@ -1,0 +1,59 @@
+/* настраиваем картинку под меню */
+.autumnBackground img {
+    width: 100%;
+    margin-top: 130px;
+}
+
+
+
+
+
+
+.block-forms__toComeIn, .block-forms__userIsNotFound, .block-forms__checkIn, .block-forms__account {
+    padding: 3rem;
+    border: 1px solid #c7ff66;
+    margin-top: 3rem;
+}
+
+
+
+[type="text"] {
+    color: black;
+}
+
+[type="button"] {
+    min-width: 110px;
+}
+
+.block-forms__toComeIn p, .block-forms__userIsNotFound p, .block-forms__checkIn p, .block-forms__account p {
+    font-family: 'Appetite-Italic';
+    font-size: 2rem;
+}
+
+span {
+    font-size: 13px;
+}
+
+
+.block-forms__userIsNotFound button {
+    background: #c7ff66;
+    color: black;
+}
+
+.block-forms__account-out {
+    background: #c7ff66;
+    color: black;
+}
+
+
+.block-forms__account-delete {
+    background: tomato;
+}
+
+.display_block {
+    display: block;
+}
+
+.display_none {
+    display: none;
+}

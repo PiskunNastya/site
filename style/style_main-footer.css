@@ -1,0 +1,352 @@
+* {
+    margin: 0;
+    color: rgb(255, 255, 255);
+}
+
+body {
+    background-image: url(../img/background.jpg);
+    min-width: 320px;
+    /* position: relative; */
+    /* подключила JS. помогает центрировать весь контент, после отображения слайдера */
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* подключила JS. помогает центрировать весь контент, после отображения слайдера */
+html {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+
+
+
+/* настройка вида слайдера. подключение JS */
+.slider {
+    display: flex;
+    justify-content: center;
+    padding-top: 8rem;
+    position: relative;
+}
+
+/* подключение JS */
+.slider__none {
+    display: none;
+}
+
+/* настройка вида слайдера */
+.slider__picture {
+    width: 770px;
+    height: 270px;
+    position: absolute;
+    opacity: 0; 
+    transition: opacity 1s;
+}
+
+/* настройка вида слайдера. подключение JS */
+.showed {
+    opacity: 1;
+}
+
+
+
+
+
+
+/* __________________ СТАРТ настраиваем модальное окно __________________ */
+
+/* отображение модального окна в блоке ourWork */
+.ourWork {
+    position: relative;
+}
+
+/* подключаем JS */
+.ourWork__modalWindow_display {
+    display: block;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    z-index: 99;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 59%;
+}
+
+/* подключаем JS */
+.ourWork__modalWindow_none {
+    display: none;
+}
+
+.ourWork__modalWindow img {
+    width: 70%;
+}
+
+.ourWork__modalWindow button {
+    height: 70%;
+    width: 45px;
+    background: #4950579c;
+    font-size: 1.3rem;
+}
+
+/* __________________ ФИНИШ настраиваем модальное окно __________________ */
+
+
+
+
+
+
+
+
+/* отступы от блоков */
+.ourWork, .services, .aboutUs, .contactUs {
+    padding-top: 5rem;
+}
+
+/* линия под каждым названием блока */
+.ourWork__head, .services__h2, .aboutUs__h2, .contactUs__h2 {
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.37);
+}
+
+
+
+
+
+
+
+/* настройка заглавия блока ourWork */
+.ourWork__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+/* настройка заглавия блока ourWork */
+.ourWork__allLinks {
+    display: flex;
+}
+
+/* настройка заглавия блока ourWork */
+.ourWork__h2, .ourWork__allLinks, .ourWork__link {
+    margin: 0;
+}
+
+/* настройка блока figure ourWork. ширина картинки */
+.ourWork__picture {
+    /* width: 15rem; */
+    width: 100%;
+}
+
+/* настройка блока figure ourWork */
+.ourWork__allArticles {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* настройка блока figure */
+.ourWork__picture-Text {
+    margin: 0.5rem;
+    border: 1px dotted rgba(255, 255, 255, 0.37);
+    padding: 0.5rem 0.5rem;
+    background-color: #2020207c;
+    width: 25%;
+}
+
+/* настройка блока figure */
+.ourWork__text {
+    text-align: center;
+}
+
+
+/* настройка переключателей (зеленые квадраты) */
+.ourWork__switches {
+    display: flex;
+    justify-content: center;
+}
+
+/* настройка переключателей (зеленые квадраты) */
+.ourWork__switch {
+    width: 10px;
+    height: 10px;
+    background: #c7ff66;
+    margin: 5px;
+}
+
+
+/* эффект при наведении на картинку */
+.ourWork__picture-Text {
+    overflow: hidden; /* Скрываем всё за контуром */
+}
+
+.ourWork__picture-Text img {
+    transition: 1s; /* Время эффекта */
+}
+
+.ourWork__picture-Text img:hover {
+    transform: scale(1.6); /* Увеличиваем масштаб */
+}
+
+
+
+
+
+
+
+
+
+
+/* настройка ширины картинки в блоках services и aboutUs */
+.services__article, .aboutUs__article {
+    width: 22%;
+}
+
+/* настройка стиля картинки в блоках services и aboutUs */
+.services__picture, .aboutUs__picture {
+    width: 100%;
+    padding: 0.3rem;
+    border: 0.5px dotted rgba(255, 255, 255, 0.37);
+    background-color: #2020207c;  
+    height: 160px;
+}
+
+/* настройка отображения картинок в блоках services и aboutUs */
+.services__allArticles, .aboutUs__allArticles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+/* настройка минимальной ширини артиклей блоков services и aboutUs */
+.aboutUs__article, .services__article {
+    min-width: 244.188px;
+    padding: 12px 0;
+}
+
+.services__link:hover {
+    text-decoration: none;
+}
+
+.services__link-span:hover  {
+    text-decoration: underline;
+}
+
+
+
+.services__picture {
+    overflow: hidden; /* Скрываем всё за контуром */
+}
+
+.services__picture {
+    transition: 1s;
+}
+
+.services__picture:hover {
+    transform: scale(1.1); /* Увеличиваем масштаб */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* настройка размещения ссылок под блоком */
+.aboutUs__links {
+    display: flex;
+}
+
+/* настройка размещения label в блоке contactUs */
+label {
+    display: flex;
+    flex-direction: column;
+}
+
+/* размер картинки в contactUs */
+.contactUs__info-picture {
+    width: 100%;
+}
+
+.contactUs__form_name-email input {
+    background: #545b624d;
+}
+
+
+
+input[type="button"] {
+    background: #c7ff66;
+    color: black;
+    width: 20%;
+}
+
+
+textarea {
+    color: antiquewhite;
+    width: 100%;
+    resize: none;
+    background: #545b624d;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* настройка footer */
+.footer {
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.37);
+    border-top: 1px dotted rgba(255, 255, 255, 0.37);
+    margin-top: 3rem;
+}
+
+.footer_text {
+    margin: 0;
+}
+
+.footer__section-icons {
+    text-align: end;
+}
+
+svg {
+    width: 46px;
+    height: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.scrollToTop img {
+    width: 65px;
+    position: fixed;
+    right: 10%;
+    bottom: 11%;
+    transition: width 500ms;
+}
+
+.scrollToTop img:hover {
+    width: 80px;
+    transition: width 500ms;
+}
